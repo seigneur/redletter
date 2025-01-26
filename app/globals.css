@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold-gradient: linear-gradient(135deg, #d4af37 0%, #c5a028 50%, #ffd700 100%);
+  --red-gradient: linear-gradient(135deg, #be123c 0%, #881337 100%);
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap");
+}
+
+body {
+  background: #881337;
+  color: #fff5e6;
+  font-family: "Inter", sans-serif;
+}
+
+.gold-text {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.spaced-text {
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.dragon-canvas {
+  background: radial-gradient(circle at center, rgba(190, 18, 60, 0.2) 0%, rgba(136, 19, 55, 0.4) 100%);
+}
+
